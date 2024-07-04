@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 
 
-const mainscreen = () => {
+const Mainscreen = () => {
 
     const router = useRouter();
     const pathname = usePathname();
@@ -160,7 +161,8 @@ const mainscreen = () => {
                         />
                         <button className="bg-gray-500  px-2 py-1 mr-4 float-left rounded">+ Invite</button>
                         <button className="bg-blue-500 px-2 py-1 mr-4 float-left rounded">Upgrade</button>
-                        <img src="../profile.jpg" alt="Profile" className="rounded-full w-10 h-10 ml-4" />
+                        <Image src="/profile.jpg" alt="Example" className="rounded-full w-10 h-10 ml-4" width={10} height={10}  />
+
                     </div>
                 </div>
 
@@ -273,7 +275,7 @@ const mainscreen = () => {
                         <div className="flex items-center justify-between p-4 bg-gray-900 rounded-lg ">
                             <div className="flex items-center">
                                 <div className="w-10 h-10 mr-4">
-                                    <img src="../brave.jpg" alt="Profile" className="rounded-full w-8 h-8 ml-4" />
+                                    <Image src="/brave.jpg" alt="Example" className="rounded-full w-8 h-8 ml-4" width={8} height={8}  />
                                 </div>
                                 <div className="text-center">
                                     <div className="text-white font-medium m-2">Brave on Mac OS X</div>
@@ -297,7 +299,7 @@ const mainscreen = () => {
                         <div className="flex items-center justify-between p-4 bg-gray-900 rounded-lg ">
                             <div className="flex items-center">
                                 <div className="w-10 h-10 mr-4">
-                                    <img src="../apple.jpg" alt="Profile" className="rounded-full w-8 h-8 ml-4" />
+                                    <Image src="/apple.jpg" alt="Example" className="rounded-full w-8 h-8 ml-4" width={8} height={8}  />
                                 </div>
                                 <div className="text-center">
                                     <div className="text-white font-medium m-2">Mia's Macbook Pro</div>
@@ -330,4 +332,4 @@ const mainscreen = () => {
     )
 }
 
-export default mainscreen
+export default Mainscreen

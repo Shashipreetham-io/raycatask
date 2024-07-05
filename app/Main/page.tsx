@@ -302,7 +302,7 @@ const Mainscreen = () => {
                                     <Image src="/apple.jpg" alt="Example" className="rounded-full w-8 h-8 ml-4" width={8} height={8}  />
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-white font-medium m-2">Mia's Macbook Pro</div>
+                                    <div className="text-white font-medium m-2">Mia&apos;s Macbook Pro</div>
                                 </div>
                                 <div>
                                     <div className="text-gray-500 ml-20">Ninh Binh, Vietnam</div>
